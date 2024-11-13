@@ -5,6 +5,8 @@ categories: [Build a Home Lab]
 tags: [Home Lab, Proxmox]
 ---
 
+
+
 # Building a Home Lab Introduction
 
 Welcome to the Building a Home Lab series! If you're interested in learning more about virtualization, networking, and systems administration, or if you’re looking to boost your IT skills, this hands-on project is a great way to have fun while learning.
@@ -22,6 +24,6 @@ Here's a basic rundown of the project:
 
 I will be setting up Proxmox as a bare-metal install on the computer, then install the VMs and containers I need onto Proxmox. See the diagram below:
 
-![Proxmox Hypervisor Example Diagram](/assets/images/2024-11-12-Home-Lab-Introduction/Home-Lab-Introduction.png)
+![Proxmox Hypervisor Example Diagram](/assets/img/posts/2024-11-12-Home-Lab-Introduction/Home-Lab-Introduction.png)
 
 

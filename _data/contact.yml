@@ -1,7 +1,7 @@
 #  The contact options.
-
-- type: github
-  icon: "fab fa-github"
+- type: linkedin
+  icon: "fab fa-linkedin"  
+  url:  "https://www.linkedin.com/in/michael-busbee/"   
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
@@ -10,9 +10,8 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: linkedin
-  icon: "fab fa-linkedin"  
-  url:  "https://www.linkedin.com/in/michael-busbee/"   
+- type: github
+  icon: "fab fa-github"
 
 #- type: rss
 #  icon: "fas fa-rss"

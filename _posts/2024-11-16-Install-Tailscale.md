@@ -24,6 +24,7 @@ Now lets go over to `local (pve)` > `CT Templates` > `Templates` to select from 
 Its worth taking some time to look through the list of templates to see just how many thing we can run from basically a point-and-click setup. After you have taken some time to browse the list, look for a package named `ubuntu-22.04-standard`, select it and click Download. You can close the download window after the template has finished downloading. We are now ready to move on to the next step.
 
 > Note: We will need to use Ubuntu 22.04 because the most recent version, 24.04 is not currently compatible with our Proxmox setup.
+
 # Step 2 - Install LXC Container for Tailscale
 
 ## Setup The Container

@@ -1,7 +1,7 @@
 --- 
-title: "Part 2: Install Tailscale"
+title: "Chapter 3: Install Tailscale"
 date: 2024-11-16
-categories: [Build a Home Lab]
+categories: [Build a Home Lab Series]
 tags: [Home Lab, Tailscale, VPN]
 ---
 

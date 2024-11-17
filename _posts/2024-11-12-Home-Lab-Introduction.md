@@ -1,7 +1,7 @@
 --- 
-title: "Part 0: Home Lab Introduction"
+title: "Chapter 1: Home Lab Introduction"
 date: 2024-11-12
-categories: [Build a Home Lab]
+categories: [Build a Home Lab Series]
 tags: [Home Lab, Proxmox]
 ---
 ## Welcome

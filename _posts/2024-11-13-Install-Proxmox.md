@@ -1,7 +1,7 @@
 --- 
-title: "Part 1: Install Proxmox"
+title: "Chapter 2: Install Proxmox"
 date: 2024-11-13
-categories: [Build a Home Lab]
+categories: [Build a Home Lab Series]
 tags: [Home Lab, Proxmox]
 ---
 

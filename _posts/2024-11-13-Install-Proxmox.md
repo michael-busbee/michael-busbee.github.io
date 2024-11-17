@@ -5,7 +5,7 @@ categories: [Build a Home Lab]
 tags: [Home Lab, Proxmox]
 ---
 
-# Step 0 - Introduction
+## Step 0 - Introduction
 
 Before we get started its is a good idea to think about what we plan to accomplish. I have outlined the steps we will use in this guide below.
 
@@ -14,7 +14,7 @@ Before we get started its is a good idea to think about what we plan to accompli
 - Step 3 - Install on the PC
 - Step 4 - Connect to the Web Console at `http://<ProxmoxIP>:8006`
 
-# Step 1 - Downloading the Proxmox ISO
+## Step 1 - Downloading the Proxmox ISO
 
 First we want to head over to the Proxmox download page to get the ISO image file. You can use the following link: [https://www.proxmox.com/en/proxmox-virtual-environment/overview](https://www.proxmox.com/en/proxmox-virtual-environment/overview)
 
@@ -27,7 +27,7 @@ Once on the page click the download button to get it rolling.
 
 Here we need to make sure we are selecting the "Proxmox VE 8.2 ISO Installer" option and click Download. Wait for the download to finish and head to the next step.
 
-# Step 2 - Flashing the ISO to a flash drives
+## Step 2 - Flashing the ISO to a flash drives
 
 Next we need to load the ISO file into the flash drives so we can install it on our computer. For that I will use Balena Etcher. We can go over to [https://etcher.balena.io/#download-etcher](https://etcher.balena.io/#download-etcher) to download the app and select the option appropriate for your system. Here you can also use similar tools such as [Rufus](https://rufus.ie/en/).
 
@@ -37,7 +37,7 @@ Once Balena is finished downloading and is installed on your system, plug in you
 
 The installer will take 1-2 minutes to run. Once it is done you have a Proxmox installer drive ready to go.
 
-# Step 3 - Install on PC
+## Step 3 - Install on PC
 
 Next we want to install Proxmox on our spare PC. Typically, this requires going into the BIOS settings on your PC and changing the boot order to allow flash drives to boot before the PC hard drive. Since this will be different for every computer, I will leave this for you to figure out. Remember Google Search and Youtube can be your friend.
 
@@ -68,7 +68,7 @@ Now just sit back and wait a few minutes and wait for the installer to finish. T
 
 ![Proxmox CLI Login Screen](/assets/img/posts/2024-11-13-Install-Proxmox/Install%20Proxmox-4.png)
 
-# Step 4 - Connect to the Web Console
+## Step 4 - Connect to the Web Console
 
 Now that Proxmox is up and running, we need to go to the web console it is advertising. Go to your browser on a different computer on the same network. Visit the URL showing on the Proxmox screen. This will take you to a page that should look like this.
 

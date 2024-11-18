@@ -7,21 +7,25 @@ tags: [Home Lab, Tailscale, VPN]
 
 ## Step 0 - Introduction
 
-Tailscale is a VPN service that allows users to connect all of their devices running the tailscale client together into one network, regardless of geographic location or which network the device is connected to. It does this all with minimal setup and does not require us to have a full VPN server as you would with a Wireguard installation for instance.
+Tailscale is a zero-config VPN that connects your devices into a private network, regardless of their location. Unlike traditional VPNs like Wireguard, it doesn't require a dedicated server.
 
-The way I intend to use tailscale is a little bit different than the setup you may have seen in other guides. What we want to do is create a dedicated container that just runs the Tailscale client. We will have this client advertise subnet routes which basically means it allows all devices connected to the same router as our container to be visible within the tailscale network. This means all of our devices on our home network will be accessible as long as we are connected to Tailscale.
+In this setup, we'll run Tailscale in a container that advertises subnet routes, making all devices on your home network accessible through Tailscale without installing the client on each one.
+
 ## Step 1 - Download Ubuntu Container Image
 
-We will need to download a list of container templates for Proxmox to use so we can select the Ubuntu Server container from that list. We need to open a shell on our Proxmox node, and run the command `pveam update` which will install the needed templates. Reminder that on my machine it is called `pve` but on your machine it will be called whatever you named it. Let's go to `pve` > `Shell` and after logging in run `pveam update`. Once we get an "update successful" we can move on.
+First, download the container templates for Proxmox:
+
+1. Open the shell on your Proxmox node (click `[your-node-name]` > `Shell`)
+2. Run pveam update
+3. Wait for 'update successful' message
 
 ![PVEAM Update](/assets/img/posts/2024-11-16-Install-Tailscale/Install%20Tailscale.png)
-
 
 Now lets go over to `local (pve)` > `CT Templates` > `Templates` to select from the list of built-in Proxmox templates.
 
 ![Navigating To Proxmox Preinstalled Templates Menu](/assets/img/posts/2024-11-16-Install-Tailscale/Install%20Tailscale-1.png)
 
-Its worth taking some time to look through the list of templates to see just how many thing we can run from basically a point-and-click setup. After you have taken some time to browse the list, look for a package named `ubuntu-22.04-standard`, select it and click Download. You can close the download window after the template has finished downloading. We are now ready to move on to the next step.
+It's worth taking some time to look through the list of templates to see just how many thing we can run from basically a point-and-click setup. After you have taken some time to browse the list, look for a package named `ubuntu-22.04-standard`, select it and click Download. You can close the download window after the template has finished downloading. We are now ready to move on to the next step.
 
 > Note: We will need to use Ubuntu 22.04 because the most recent version, 24.04 is not currently compatible with our Proxmox setup.
 
@@ -32,7 +36,6 @@ Its worth taking some time to look through the list of templates to see just how
 Now that we have our template installed let's click the `Create CT` button up in the top right corner of the Proxmox web console.
 
 - General
-	- CT ID: 9001
 	- Hostname: `Tailscale`
 	- Password: Choose something secure
 - Template
@@ -41,7 +44,7 @@ Now that we have our template installed let's click the `Create CT` button up in
 	- Cores: 2
 - Memory
 	- Memory (MiB): 2048
-- Network- Bridge: `vmbr1
+- Network
 	- IPv4: DHCP
 - Confirm
 	- Finish
@@ -100,8 +103,10 @@ In order to run the Tailscale Subnet node we will first need to run a few comman
 echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
 echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale.conf
 sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
-tailscale up --advertise-routes=10.66.6.0/24
+tailscale up --advertise-routes=10.31.0.0/24
 ```  
+
+> For the `tailscale up` command use the IP Address for the network you want Tailscale to advertise to the VPN network. For instance if your home router IP is 192.168.1.1 you will likely want to use 192.168.1.0
 
 Then tailscale gives us a URL to use to login.
 
@@ -115,7 +120,7 @@ Now we need to go to the admin console for Tailscale and enable the routes on th
 
 ![Tailscale Admin Console - Edit Route Settings](/assets/img/posts/2024-11-16-Install-Tailscale/Install%20Tailscale-9.png)
 
-Check the checkbox for the IP range `10.66.6.0/24` then click `Save`. Now our Tailscale subnet server is complete.
+Check the checkbox for the IP range `10.31.0.1/24` then click `Save`. Now our Tailscale subnet server is complete.
 
 ![Tailscale Route Settings](/assets/img/posts/2024-11-16-Install-Tailscale/Install%20Tailscale-10.png)
 

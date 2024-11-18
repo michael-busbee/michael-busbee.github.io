@@ -122,6 +122,8 @@ Now we need to go to the admin console for Tailscale and enable the routes on th
 
 Check the checkbox for the IP range `10.31.0.1/24` then click `Save`. Now our Tailscale subnet server is complete.
 
+> OPTIONAL STEP: You may have noticed when I ran the `tailscale up --advertise-routes=10.31.0.0/24` command I also included `--advertise-exit-node`. Adding this allows you to route your device's traffic through the Tailscale exit node so it appears you are connecting to a website from the location of the Tailscale exit node rather than your actual location. If you choose to follow this step as well make sure the "Use as exit node" checkbox is selected as well.
+
 ![Tailscale Route Settings](/assets/img/posts/2024-11-16-Install-Tailscale/Install%20Tailscale-10.png)
 
 ## Step 5 - Confirm Tailscale VPN connection

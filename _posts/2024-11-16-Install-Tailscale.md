@@ -81,7 +81,9 @@ The easiest way to install Tailscale is using the open-source script found at [h
 
 Let's go to `pve` > `Shell` to open the console. Log in if you have to and copy/paste the following command:
 
+```bash
 bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/add-tailscale-lxc.sh)"
+```
 
 Follow the install wizard provided by the script. Use the arrow keys to navigate through the menu and space bar to check the checkboxes. Find the `Tailscale` container we created and select the option by hitting space until a `(*)` appears in the parentheses. Then move to `<Ok>` and press Enter.
 

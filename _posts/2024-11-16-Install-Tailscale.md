@@ -16,7 +16,7 @@ In this setup, we'll run Tailscale in a container that advertises subnet routes,
 First, download the container templates for Proxmox:
 
 1. Open the shell on your Proxmox node (click `[your-node-name]` > `Shell`)
-2. Run pveam update
+2. Run `pveam update`
 3. Wait for 'update successful' message
 
 ![PVEAM Update](/assets/img/posts/2024-11-16-Install-Tailscale/Install%20Tailscale.png)

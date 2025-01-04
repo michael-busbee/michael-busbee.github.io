@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Phishing-Email"
+title: "Phishing Email"
 date: 2025-01-04
 categories: [Lets Defend]
 tages: [phishing] 
 ---
+
+Challenge Link: https://app.letsdefend.io/challenge/phishing-email
 
 
 I unzipped the file `PhishingChallenge.zip` found at `C:\Users\LetsDefend\Desktop\Files\` and unlocked it using the password provided by the challenge.  I then opened the file `paypal.eml` in Notepad++ to view the raw email info.

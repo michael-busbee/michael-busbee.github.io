@@ -2,8 +2,8 @@
 layout: post
 title: "Phishing-Email"
 date: 2025-01-04
-categories: "Lets Defend"
-description: 
+categories: [Lets Defend]
+tages: [phishing] 
 ---
 
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Phishing Email"
+title: "Let's Defend: Phishing Email"
 date: 2025-01-04
 categories: [Lets Defend]
-tages: [phishing] 
+tags: [Phishing] 
 ---
 
 Challenge Link: [https://app.letsdefend.io/challenge/phishing-email](https://app.letsdefend.io/challenge/phishing-email)

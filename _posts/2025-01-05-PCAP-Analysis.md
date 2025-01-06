@@ -15,15 +15,15 @@ I used the following Wireshark display filter to limit results to ones containin
 frame contains "P13"
 ```
 
-![P13 Conversation](/assets/img/posts/2025-01-005-PCAP-Analysis/image-1.png)
+![P13 Conversation](/assets/img/posts/2025-01-05-PCAP-Analysis/image-1.png)
 
 It appears there was a conversation happening between 192.168.235.137 and 192.168.235.131. This can be confirmed by right clicking one of the packets and selecting Follow > TCP Stream .
 
-![Follow TCP Stream](/assets/img/posts/2025-01-005-PCAP-Analysis/image-2.png)
+![Follow TCP Stream](/assets/img/posts/2025-01-05-PCAP-Analysis/image-2.png)
 
 This shows us the full conversation between the users `P13` and `Cu713` 
 
-![Full Conversation](/assets/img/posts/2025-01-005-PCAP-Analysis/image-3.png)
+![Full Conversation](/assets/img/posts/2025-01-05-PCAP-Analysis/image-3.png)
 
 Answer:
 `192.168.235.137,192.168.235.131 `
@@ -46,7 +46,7 @@ What is the name of the file that was sent through the network?
 
 By following the TCP stream of the packet found in the previous question and investigating its contents, I found a reference to a file named `file` .
 
-![Upload](/assets/img/posts/2025-01-005-PCAP-Analysis/image-4.png)
+![Upload](/assets/img/posts/2025-01-05-PCAP-Analysis/image-4.png)
 
 Answer: 
 `file` 
@@ -57,7 +57,7 @@ What is the name of the web server where the file was uploaded?
 
 Further down on the same TCP stream I found a reference to an Apache server.
 
-![Server Information](/assets/img/posts/2025-01-005-PCAP-Analysis/image-5.png)
+![Server Information](/assets/img/posts/2025-01-05-PCAP-Analysis/image-5.png)
 
 Answer:
 `Apache` 
@@ -68,7 +68,7 @@ What directory was the file uploaded to?
 
 In the same screenshot above, I can also see a reference to the `upload` directory where the `file` will be sent.
 
-![Upload Directory](/assets/img/posts/2025-01-005-PCAP-Analysis/image-6.png)
+![Upload Directory](/assets/img/posts/2025-01-05-PCAP-Analysis/image-6.png)
 
 Answer:
 `uploads` 
@@ -79,7 +79,7 @@ How long did it take the sender to send the encrypted file?
 
 To find the duration of the upload I went to `Statistics` > `Conversation` and selected the `Limit to display filter` checkbox to only show the conversation related to my selected packet from the previous questions. Here I was able to find the duration was listed as `0.0073`.
 
-![Upload Duration](/assets/img/posts/2025-01-005-PCAP-Analysis/image-7.png)
+![Upload Duration](/assets/img/posts/2025-01-05-PCAP-Analysis/image-7.png)
 
 Answer:
 `0.0073`

@@ -49,7 +49,25 @@ Splunk has a few ways to import data:
 
 I was given the sample log data as a csv file called `sample.csv` so I used the `Upload` button in the Add Data page.
 
-![sample.csv](/assets/img/posts/2025-01-09-Introduction-To-Splunk/sample.csv)
+Download the example file here: [sample.csv](/assets/img/posts/2025-01-09-Introduction-To-Splunk/sample.csv)
+
+It just has the following text data:
+
+```
+timestamp,username,event_type,source_ip,authentication_status
+2024-07-20 12:00:00,jdoe,login,192.168.1.101,success
+2024-07-20 12:05:00,asmith,login,192.168.1.102,success
+2024-07-20 12:10:00,jdoe,login,192.168.1.101,failed
+2024-07-20 12:15:00,mjohnson,login,192.168.1.103,failed
+2024-07-20 12:20:00,asmith,login,192.168.1.102,success
+2024-07-20 12:25:00,mjohnson,login,192.168.1.103,success
+2024-07-20 12:30:00,rrodriguez,login,192.168.1.104,success
+2024-07-20 12:35:00,bwilliams,login,192.168.1.105,failed
+2024-07-20 12:40:00,rrodriguez,login,192.168.1.104,success
+2024-07-20 12:45:00,jdoe,login,192.168.1.101,success
+2024-07-20 12:50:00,bwilliams,login,192.168.1.105,success
+2024-07-20 12:55:00,jdoe,login,192.168.1.101,failed
+```
 
 Add Data wizard walked me through the following steps:
 

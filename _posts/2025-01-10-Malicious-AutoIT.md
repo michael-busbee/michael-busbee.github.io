@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Let's Defend: Malicious AutoIT"
-date: 2025-01-05
+date: 2025-01-10
 categories: [Lets Defend]
 tags: [Malware, Detect It Easy, AutoIT, DLL] 
 ---

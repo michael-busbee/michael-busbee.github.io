@@ -71,7 +71,7 @@ Answer:
 ## Question 6
 What is the domain used by the malicious embedded code?
 
-```PowerShell
+```
 autoit-ripper "C:\Users\LetsDefend\Desktop\ChallengeFile\sample" "C:\Users\LetsDefend\Desktop\ChallengeFile"
 ```
 

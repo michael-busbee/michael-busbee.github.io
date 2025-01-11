@@ -3,7 +3,7 @@ layout: post
 title: "SPL: Search Processing Language Cheatsheet"
 date: 2025-01-11
 categories: [Splunk]
-tags: [Splunk, SIEM]
+tags: [Splunk, SIEM, SPL]
 ---
 
 This cheatsheet provides quick reference tips for using Splunk effectively. Clarity and accuracy are key—let's dive in!

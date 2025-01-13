@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Let's Defend: Upstyle Backdoor"
-date: 2025-01-10
+date: 2025-01-12
 categories: [Lets Defend]
 tags: [Malware, Python] 
 ---

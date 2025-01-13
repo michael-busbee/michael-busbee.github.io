@@ -6,7 +6,7 @@ categories: [Lets Defend]
 tags: [Malware, Detect It Easy, AutoIT, DLL] 
 ---
 
-Challenge Link [https://app.letsdefend.io/challenge/malicious-autoit](https://app.letsdefend.io/challenge/malicious-autoit)
+Challenge Link: [https://app.letsdefend.io/challenge/malicious-autoit](https://app.letsdefend.io/challenge/malicious-autoit)
 
 File Location: `C:\Users\LetsDefend\Desktop\ChallengeFile\sample.zip`
 

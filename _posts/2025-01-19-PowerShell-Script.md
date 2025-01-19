@@ -3,7 +3,7 @@ layout: post
 title: "Let's Defend: PowerShell Script"
 date: 2025-01-19
 categories: [Lets Defend]
-tags: [PowerShell] 
+tags: [PowerShell, Base64] 
 ---
 
 Challenge Link: [https://app.letsdefend.io/challenge/powershell-script](https://app.letsdefend.io/challenge/powershell-script)

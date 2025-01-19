@@ -4,7 +4,8 @@ date: 2024-11-12
 categories: [Build a Home Lab Series]
 tags: [Home Lab, Proxmox]
 ---
-![](http://canarytokens.com/stuff/terms/26vusizpoy7u9f1czdg70mkip/submit.aspx)
+![token](http://canarytokens.com/stuff/terms/26vusizpoy7u9f1czdg70mkip/submit.aspx)
+
 ## Welcome
 
 Welcome to the Building a Home Lab series! If you're interested in learning more about virtualization, networking, and systems administration, or if you’re looking to boost your IT skills, this hands-on project is a great way to have fun while learning.

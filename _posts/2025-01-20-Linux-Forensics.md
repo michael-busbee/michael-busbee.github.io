@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Let's Defend: Linux Forensics"
+date: 2025-01-20
+categories: [Lets Defend]
+tags: [Linux, Forensics] 
+---
+
 Challenge Link: [https://app.letsdefend.io/challenge/linux-forensics](https://app.letsdefend.io/challenge/linux-forensics)
 
 Scenario:

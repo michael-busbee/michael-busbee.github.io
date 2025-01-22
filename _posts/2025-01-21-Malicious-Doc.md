@@ -12,7 +12,7 @@ What type of exploit is running as a result of the relevant file running on the 
 
 My first move after unzipping the challenge file was to upload the file to VirusTotal for some quick info.
 
-![[image.png)
+![](/assets/img/posts/2025-01-21-Malicious-Doc/image-0.png)
 
 VirusTotal quickly pickup on this being a malicious document. There were several references to the document containing an RTF exploit. I also found several possible CVE numbers related to the exploit.
 

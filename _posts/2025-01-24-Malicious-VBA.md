@@ -3,14 +3,13 @@ layout: post
 title: "Let's Defend: Malicious VBA"
 date: 2025-01-24
 categories: [Lets Defend]
-tags: [Cyberchef, VBA] 
+tags: [Cyber Chef, VBA] 
 ---
 
 
 Challenge Link: https://app.letsdefend.io/challenge/Malicious-VBA 
-Malicious Macro: `/root/Desktop/ChallengeFiles/invoice.vb
+Malicious Macro: `/root/Desktop/ChallengeFiles/invoice.vb`
 
-`
 ## Question 1
 The document initiates the download of a payload after the execution, can you tell what website is hosting it?
 

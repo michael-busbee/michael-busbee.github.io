@@ -9,6 +9,7 @@ tags: [VirusTotal]
 Challenge Link: [https://app.letsdefend.io/challenge/remote-working](https://app.letsdefend.io/challenge/remote-working)
 File link: `/root/Desktop/ChallengeFiles/ORDER_SHEET_SPEC.zip`
 Password: `infected`
+
 ## Question 1
 What is the date the file was created?
 
